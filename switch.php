@@ -1,32 +1,21 @@
 <?php
-//
-$i = 1;
-switch($i) {
-    case 0:
-        echo "i は 0です \n";
-        break;
-
-    case 1:
-        echo "i は 1です \n";
-        break;
-
-    default:
-        echo "i は 0と1 以外です \n";
-        break;
+$i = 123;
+if ($i <= 100) {
+    echo "100以下 \n";
+} else {
+    echo "100を超える \n";
 }
 
-$i = 2;
-switch($i) {
-    case '2a':
-        echo "i は '2a'です \n";
-        break;
+$i = 123;
 
-    case '2':
-        echo "i は '2'(string)です \n";
-        break;
+echo "50未満 \n";
+var_dump($i < 50);
 
-    case 2:
-        echo "i は 2(int)です \n";
-        break;
+echo "100未満 \n";
+var_dump($i < 100);
 
-}
+echo "150未満 \n";
+var_dump($i < 150);
+
+echo "150以上 \n";
+var_dump($i >= 150);
