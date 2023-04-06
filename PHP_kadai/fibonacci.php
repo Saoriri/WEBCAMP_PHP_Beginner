@@ -16,5 +16,6 @@ while(($num3 = $num1 + $num2) < 10000) {
    echo "\n";
 }
 
+
    echo "$num3 \n";
 ?>
